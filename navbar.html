@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Oswald:wght@200..700&family=Playwrite+DE+Grund:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Oswald:wght@200..700&family=Playwrite+DE+Grund:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #414141;
+      }
+      .nav-container {
+        margin-bottom: 20px;
+      }
+      h2 {
+        color: #fff;
+        margin: 20px 0 20px;
+        font-size: 2rem;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        text-align: left;
+      }
+      .nav-bar-1 {
+        margin-bottom: 30px;
+      }
+      .nav-bar-1 ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        padding: 2vh;
+        font-size: 1.8rem;
+        background-color: #080808;
+        font-family: "Playpen Sans", cursive;
+        font-weight: 600;
+      }
+      .nav-bar-1 ul li {
+        background-color: #080808;
+        display: inline;
+      }
+      .nav-bar-1 a {
+        background-color: #080808;
+        border: none;
+        color: #fff;
+        text-decoration: none;
+      }
+      .log-in-btn-1 {
+        padding: 1vh;
+        width: 90px;
+        font-size: 1.4rem;
+        font-family: "Playpen Sans", cursive;
+        font-weight: 700;
+        border: none;
+        border-radius: 10px;
+        background-color: #0272fc;
+        cursor: pointer;
+      }
+      .nav-bar-1 li {
+        position: relative;
+      }
+      .nav-bar-1 a::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        transition: all 0.5s ease-in-out 0.5s;
+        transform: scaleX(0);
+        background-color: #fff;
+        /* text-decoration: underline white; */
+      }
+      .log-in-btn-1::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        top: 55px;
+        left: 0;
+        transition: all 0.5s ease-in-out 0.5s;
+        transform: scaleX(0);
+        background-color: #fff;
+        /* text-decoration: underline white; */
+      }
+
+      .nav-bar-1 a:hover::after {
+        transform: scaleX(1.5);
+      }
+      .log-in-btn-1:hover::after {
+        transform: scaleX(1.5);
+      }
+      /* .log-in-btn-1:hover {
+        background-color: #2bfd01;
+        transition: all 0.5s ease-in-out 0.5s;
+        transform: scaleX(1.5);
+      } */
+
+      .nav-bar-2 {
+        background-color: #135a26;
+        width: 400px;
+        padding: 20px;
+        border: solid 3px rgb(4, 43, 4);
+        margin-bottom: 30px;
+      }
+      .nav-bar-2 ul {
+        margin: 0;
+        padding: 0;
+        display: block;
+        box-sizing: border-box;
+        list-style-type: none;
+        width: 100%;
+      }
+      .nav-bar-2 li {
+        display: block;
+        width: 100%;
+        /* background-color: #135a26; */
+        margin-bottom: 10px;
+      }
+      .nav-bar-2 a {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 600;
+        color: #fff;
+        font-family: "Oswald", sans-serif;
+      }
+      .log-in-btn-2 {
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        background-color: #043002;
+        font-family: "Playpen Sans", cursive;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+      }
+      .nav-bar-2 li :hover {
+        background-color: #044801;
+      }
+      .log-in-btn-2:hover {
+        background-color: rgb(81, 255, 1);
+        color: #080808;
+      }
+
+      .nav-bar-3 {
+        background-color: #0194fe;
+        padding: 3px;
+      }
+      .nav-bar-3 ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .nav-bar-3 li {
+        padding: 0;
+        margin: 0;
+      }
+      .nav-bar-3 a {
+        text-decoration: none;
+        display: block;
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: "Lobster", sans-serif;
+        color: #01025a;
+      }
+      .nav-bar-3 li > a:hover {
+        color: #ff0051;
+        text-shadow: 1px 1px 1px #ff00c8;
+      }
+      .dropdown-content {
+        display: none;
+        background-color: #fff;
+
+        padding: 10px;
+        min-width: 100px;
+      }
+      .dropdown-content a {
+        font-size: 1.5rem;
+        font-weight: 900;
+        font-family: "Playwrite DE Grund", cursive;
+        display: block;
+        width: 100%;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #0194fe;
+        color: #ff0051;
+        text-shadow: 1px 1px 1px #ff00c8;
+      }
+      .nav-bar-3 li:hover .dropdown-content {
+        display: block;
+        position: absolute;
+      }
+      .log-in-btn-3 {
+        min-width: 80px;
+        min-height: 10px;
+        padding: 5px;
+        font-size: 1.5rem;
+        font-family: "Oswald", sans-serif;
+        background-color: #0151fd;
+        border: none;
+        border-radius: 8px;
+        font-weight: 800;
+        color: #01025a;
+        cursor: pointer;
+      }
+      .log-in-btn-3:hover {
+        background-color: #ff00c8;
+        color: yellow;
+        box-shadow: 3px 3px 3px 3px #ff0051;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-container">
+      <h2>Variation 1: Horizontal with underline effect</h2>
+      <nav class="nav-bar-1">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <button class="log-in-btn-1" type="button">Login</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nav-container">
+      <h2>Variation 2: Vertical with hover effect</h2>
+      <nav class="nav-bar-2">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="log-in-btn-2" type="button">Login</button>
+      </nav>
+    </div>
+    <div class="nav-container">
+      <h2>Variation 3: Horizontal with Dropdown</h2>
+      <nav class="nav-bar-3">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#">About</a>
+            <div class="dropdown-content">
+              <a href="#">Team</a>
+              <a href="#">Content</a>
+              <a href="#">Work</a>
+            </div>
+          </li>
+          <li><a href="#">Contact</a></li>
+          <li><button class="log-in-btn-3" type="button">Login</button></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
